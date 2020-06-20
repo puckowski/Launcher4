@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <TextView android:id="@+id/titleArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/homescreen_dialog_label"
+        android:editable="false"
+        android:padding="10dip"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" >
+        
+    </TextView>
+    		
+    <LinearLayout android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+    
+    	<Button android:id="@+id/addWidgetButton"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/homescreen_dialog_add_widget"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/custom_view_transparent_selector"
+        	android:textSize="16sp"
+        	android:padding="16dip" 
+        	android:gravity="center_horizontal" />
+    
+    	<Button android:id="@+id/removeWidgetButton"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/homescreen_dialog_remove_widget"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/custom_view_transparent_selector"
+        	android:textSize="16sp"
+        	android:padding="16dip"
+        	android:gravity="center_horizontal" />
+    	
+    	<Button android:id="@+id/expandWidgetButton"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/homescreen_dialog_expand_widget"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/custom_view_transparent_selector"
+        	android:textSize="16sp"
+        	android:padding="16dip" 
+        	android:gravity="center_horizontal" />
+    	
+    	<Button android:id="@+id/collapseWidgetButton"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/homescreen_dialog_collapse_widget"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/custom_view_transparent_selector"
+        	android:textSize="16sp"
+        	android:padding="16dip" 
+        	android:gravity="center_horizontal" />
+    	
+    	<Button android:id="@+id/setWallpaperButton"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/homescreen_dialog_set_wallpaper"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/custom_view_transparent_selector"
+        	android:textSize="16sp"
+        	android:padding="16dip" 
+        	android:gravity="center_horizontal" />
+    	
+    </LinearLayout>
+    
+</LinearLayout>

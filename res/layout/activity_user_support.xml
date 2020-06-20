@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <LinearLayout android:id="@+id/emailPreviewLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+   		android:layout_height="0dip"
+   		android:layout_weight="1.0" >
+        
+        <TextView android:id="@+id/textViewSupportInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/support_activity_info_label" 
+	        android:editable="false"
+	        android:padding="10dip"
+	        android:textColor="@android:color/white"
+	        android:textSize="18sp" >
+	        
+	    </TextView>
+	    
+	    <TextView android:id="@+id/textViewTo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="To : Dan (Launcher4 Developer)" 
+	        android:editable="false"
+	        android:padding="10dip"
+	        android:textColor="@android:color/white"
+	        android:textSize="18sp" >
+	        
+	    </TextView>
+	 
+	    <TextView android:id="@+id/textViewSubject"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Subject : Launcher4 Support" 
+	        android:editable="false"
+	        android:padding="10dip"
+	        android:textColor="@android:color/white"
+	        android:textSize="18sp" >
+	        
+	    </TextView>
+	 
+	    <TextView android:id="@+id/textViewMessage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Message : " 
+	        android:editable="false"
+	        android:padding="10dip"
+	        android:textColor="@android:color/white"
+	        android:textSize="18sp" >
+	        
+	    </TextView>
+	 
+	    <EditText android:id="@+id/editTextMessage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="top"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="10dip"
+	        android:inputType="textMultiLine"
+	        android:lines="8" >
+	    
+	    </EditText>
+ 
+    </LinearLayout>
+    
+    <Button android:id="@+id/sendEmailButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_view_transparent_selector"
+        android:textSize="16sp"
+        android:padding="16dip"
+        android:text="Send" >
+        
+    </Button>
+ 
+</LinearLayout>

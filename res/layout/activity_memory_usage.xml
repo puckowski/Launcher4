@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <LinearLayout android:id="@+id/graphLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+   		android:layout_height="0dip"
+   		android:layout_weight="1.0" >
+   		
+	    <LinearLayout android:id="@+id/headerLayout"
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	   		android:layout_height="wrap_content" >
+	        
+	        <TextView android:id="@+id/textViewGraphInfo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="VM heap usage (percentage of maximum available)" 
+		        android:editable="false"
+		        android:padding="10dip"
+		        android:textColor="@android:color/white"
+		        android:textSize="18sp" >
+		        
+		    </TextView>
+		    
+	    </LinearLayout>
+    
+	    <com.puckowski.launcher4.SimpleBarGraph android:id="@+id/heapBarGraph" 
+	    	android:layout_width="wrap_content"
+		    android:layout_height="0dip"
+	   		android:layout_weight="1.0" >
+	        
+	    </com.puckowski.launcher4.SimpleBarGraph>
+    
+    </LinearLayout>
+    
+    <Button android:id="@+id/clearSamplesButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_view_transparent_selector"
+        android:textSize="16sp"
+        android:padding="16dip"
+        android:text="Clear samples" >
+        
+    </Button>
+    
+</LinearLayout>

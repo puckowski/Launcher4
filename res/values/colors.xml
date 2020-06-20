@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <color name="color_black">#000000</color>
+	<color name="color_transparent">#80000000</color>
+	<color name="color_fully_transparent">#00000000</color>
+		
+	<color name="color_dark_goldenrod">#FFB90F</color>
+	<color name="color_deep_sky_blue">#00BFFF</color>
+	
+</resources>

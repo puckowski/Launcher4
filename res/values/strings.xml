@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    <string name="app_name">Launcher4</string>
+    <string name="launcher_settings">Launcher4 settings</string>
+    <string name="launcher_info">Launcher4 info</string>
+    <string name="launcher_wallpaper">Launcher4 wallpaper activity</string>
+    <string name="launcher_support">Launcher4 support</string>
+    <string name="launcher_report">Launcher4 bug report</string>
+    <string name="launcher_memory">Launcher4 memory usage</string>
+    
+    <string name="service_data_collection">Launcher4 Heap Usage</string>
+    
+    <string name="all_apps_button_label">All apps</string>
+    
+    <string name="menu_insert_widget_label">Add widget</string>
+    <string name="menu_remove_widget_label">Remove widget</string>
+    <string name="menu_expand_widget_label">Expand widget</string>
+    <string name="menu_collapse_widget_label">Collapse widget</string>
+    <string name="menu_set_wallpaper_label">Set wallpaper</string>
+    <string name="menu_launcher_settings_label">Launcher settings</string>
+    <string name="menu_device_settings_label">Settings</string>
+        
+    <string name="homescreen_dialog_label">Select an action</string>
+    <string name="homescreen_dialog_add_widget">Add widget</string>
+    <string name="homescreen_dialog_remove_widget">Remove widget</string>
+    <string name="homescreen_dialog_expand_widget">Expand widget</string>
+    <string name="homescreen_dialog_collapse_widget">Collapse widget</string>
+    <string name="homescreen_dialog_set_wallpaper">Set wallpaper</string>
+    
+    <string name="launcher_info_label">Launcher4 info</string>
+    <string name="launcher_info_text">This launcher, currently in alpha, is developed by Daniel Puckowski. 
+        Launcher4 is intended to be a lightweight homescreen-replacement
+        application. If you have questions about the project or wish to contribute, email
+        puckowski.d@gmail.com. For more information please visit: 
+        https://sites.google.com/site/androidlauncherproject/about
+    </string>
+       
+    <string name="wallpaper_activity_select">Select image</string>
+    <string name="wallpaper_activity_cancel">Cancel</string>
+    
+    <string name="support_activity_info_label">If you have any questions or comments about
+        Launcher4 feel free to share them here. When you are done typing your message you
+        may select your Email client of choice to send it.
+    </string>
+    
+    <string name="report_activity_info_label">If you are experiencing an issue with Launcher4
+        (such as application crashes, an unexpected behavior, or visual glitches) then you
+        may describe the problem you are having here. When you are done typing your message
+        you may select your Email client of choice to send it.
+    </string>
+    
+    <string name="recent_or_running_apps_summary">By default recent apps list is shown. Running apps
+        list requires Android version 3.0 or greater (Android Honeycomb).
+    </string>
+    <string name="override_back_button_summary">Long press of back button will show list of all homescreens. 
+        Disabled for the first homescreen. List of homescreens may also be accessed via long 
+        press of the All Apps button."
+    </string>
+    <string name="set_target_dimensions_summary">Set target resolution for loading an image into
+        memory. Default resolution is 720p. Some devices may not be able to support higher resolutions. 
+    </string>
+    <string name="set_bitmap_config_summary">Set bitmap configuration type. Using a configuration
+        that stores pixels using fewer bytes will reduce memory consumption when setting wallpaper.
+        The default is RGB_565.
+    </string>
+    <string name="disable_purgeable_summary">May speed up wallpaper load times. However, disabling this
+        may lead to crashes (out of memory errors).
+    </string>
+    <string name="disable_cache_summary">Disable drawing of homescreens with cache. This also affects
+        homescreen animations. Depending on the device, this may impact perceived UI performance.
+    </string>
+    <string name="set_cache_quality_summary">Set the quality of the drawing cache for homescreens
+        and homescreen animations.
+    </string>
+    <string name="enable_data_collection_summary">Launcher will periodically collect VM heap size data
+        for debugging/testing purposes.
+    </string>
+    <string name="collection_interval_summary">Set the interval to collect heap data. Shorter intervals
+        may impact device performance/responsiveness. Intended for debugging purposes only. Default is 5
+        seconds.
+    </string>
+    <string name="sample_number_summary">Set the numbers of samples to collect. Newer samples will
+        replace the oldest samples stored if capacity is reached. Default is 24.
+    </string>
+    <string name="enable_landscape_summary">Homescreens will change orientation according to device
+        orientation. This setting is still under development and is intended for testing purposes
+        only.
+    </string>
+    
+</resources>

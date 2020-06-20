@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appIconView"
+
+    android:layout_width="72dip"
+    android:layout_height="72dip"
+
+    android:textSize="12dip"
+    android:textColor="#FFFFFF"
+
+    android:singleLine="true"
+    android:ellipsize="end"
+
+    android:gravity="center_horizontal" >
+
+</TextView>
+

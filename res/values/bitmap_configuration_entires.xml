@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+	<string-array name="bitmapConfigurationEntries">
+    
+    	<item>"RGB_565 (2 bytes per pixel)"</item>
+    	<item>"ARGB_4444 (2 bytes w/ alpha)"</item>
+    	<item>"ARGB_8888 (4 bytes per pixel)"</item>
+    
+	</string-array>
+	
+	<string-array name="bitmapConfigurationValues">
+    
+    	<item>"RGB_565"</item>
+    	<item>"ARGB_4444"</item>
+    	<item>"ARGB_8888"</item>
+    
+	</string-array>
+
+</resources>

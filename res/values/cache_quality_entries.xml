@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+	<string-array name="cacheQualityEntries">
+    
+    	<item>"LOW"</item>
+    	<item>"HIGH"</item>
+		<item>"AUTO SELECT"</item>
+    
+	</string-array>
+	
+	<string-array name="cacheQualityValues">
+    
+    	<item>"LOW"</item>
+    	<item>"HIGH"</item>
+		<item>"AUTO"</item>
+    
+	</string-array>
+
+</resources>

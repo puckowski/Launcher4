@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+	<string-array name="sampleNumberEntries">
+    
+    	<item>"24"</item>
+    	<item>"48"</item>
+    	<item>"72"</item>
+    	<item>"96"</item>
+    
+	</string-array>
+	
+	<string-array name="sampleNumberValues">
+    
+    	<item>"24"</item>
+    	<item>"48"</item>
+    	<item>"72"</item>
+    	<item>"96"</item>
+    
+	</string-array>
+
+</resources>

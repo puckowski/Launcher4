@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/addWidget" android:title="@string/menu_insert_widget_label"></item>
+    <item android:id="@+id/removeWidget" android:title="@string/menu_remove_widget_label"></item>
+    
+    <item android:id="@+id/expandWidget" android:title="@string/menu_expand_widget_label"></item>
+    <item android:id="@+id/collapseWidget" android:title="@string/menu_collapse_widget_label"></item>
+    
+    <item android:id="@+id/setWallpaper" android:title="@string/menu_set_wallpaper_label"></item>
+    
+    <item android:id="@+id/launcherSettings" android:title="@string/menu_launcher_settings_label"></item>
+    <item android:id="@+id/deviceSettings" android:title="@string/menu_device_settings_label"></item>
+    
+</menu>

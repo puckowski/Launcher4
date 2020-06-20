@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:key="defaultScreen" >
+    
+    <PreferenceCategory android:title="Preferences" >
+        
+	    <PreferenceScreen android:key="homescreenPreferenceScreen"
+	        android:title="Edit homescreens" >
+	    	<PreferenceCategory android:title="Edit homescreens" >
+	        
+	    		<EditTextPreference android:key="numberOfHomescreens"
+	        		android:title="Number of homescreens" >
+	    		</EditTextPreference>
+	    
+	    		<ListPreference android:key="homescreenColumns"
+	        		android:title="Number of homescreen columns"
+	        		android:summary="Affects a newly added widget's layout and size. Default is 5."
+	        		android:entries="@array/gridColumnEntries"
+	        		android:entryValues="@array/gridColumnEntries" >
+	    		</ListPreference>
+	    
+	    		<ListPreference android:key="homescreenRows"
+	       			android:title="Number of homescreen rows"
+	        		android:summary="Affects a newly added widget's layout and size. Default is 5."
+	        		android:entries="@array/gridRowEntries"
+	        		android:entryValues="@array/gridRowEntries" >
+	    		</ListPreference>
+	    	
+	    		<CheckBoxPreference android:key="scrollbarMatchDockWidth"
+	    	    	android:summary="By default the scrollbar will be as wide as display width."
+	        		android:title="Match scrollbar width to dock" >
+	    		</CheckBoxPreference>
+	    	
+	    		<CheckBoxPreference android:key="hideHomescreenScrollbar"
+	        		android:title="Hide homescreen scrollbar" >
+	    		</CheckBoxPreference>
+	    	
+	    	</PreferenceCategory>
+	    </PreferenceScreen>
+	    
+	    <PreferenceScreen android:key="appListPreferenceScreen"
+	        android:title="Edit app list" >
+	    	<PreferenceCategory android:title="Edit app list" >
+	        
+	    	    <CheckBoxPreference android:key="hideApplicationName"
+	    	        android:title="Hide application name"
+	            	android:summary="Hide application names in the list. Display icon only." >
+	    		</CheckBoxPreference>
+	    	
+	    	</PreferenceCategory>
+	    </PreferenceScreen>
+	    
+	    <PreferenceScreen android:key="dockPreferenceScreen"
+	        android:title="Edit dock" >
+	    	<PreferenceCategory android:title="Edit dock" >
+	        
+	        	<CheckBoxPreference android:key="disableRecentApps"
+	        	    android:title="Disable recent apps list"
+	            	android:summary="Don't list recently used apps in the dock." >
+	    		</CheckBoxPreference>
+	    	
+	    		<EditTextPreference android:key="numberOfRecentApps"
+	        		android:title="Recent apps in dock" 
+	        		android:summary="Maximum number of recent apps to display. Default is 8." >
+	    		</EditTextPreference>
+	    	
+	    		<ListPreference android:key="dockMargins"
+	        		android:title="Dock margins"
+	        		android:summary="Add a left/right hand margin to the homescreen dock."
+	        		android:entries="@array/dockMarginEntries"
+	        		android:entryValues="@array/dockMarginValues" >
+	    		</ListPreference>
+	    		
+	    		<CheckBoxPreference android:key="fixedDockWidth"
+	        	    android:title="Fixed dock width"
+	            	android:summary="Width of the dock will match display width." >
+	    		</CheckBoxPreference>
+	    	
+	    	</PreferenceCategory>
+	    </PreferenceScreen>
+	    	
+	    <PreferenceScreen android:key="wallpaperPreferenceScreen"
+	        android:title="Wallpaper settings" >
+	    	<PreferenceCategory android:title="Wallpaper settings" >
+	        
+	        	<CheckBoxPreference android:key="scrollingWallpaperEnabled"
+	        		android:title="Enable scrolling wallpaper" 
+	        		android:summary="Wallpaper will scroll horizontally with swipes between homescreens." >
+	    		</CheckBoxPreference>
+	    	
+	        	<ListPreference android:key="wallpaperImageQuality"
+	        		android:title="Set wallpaper image quality"
+	        		android:summary="@string/set_target_dimensions_summary"
+	        		android:entries="@array/wallpaperResolutionEntries"
+	        		android:entryValues="@array/wallpaperResolutionValues" >
+	    		</ListPreference>
+	    	
+	    	</PreferenceCategory>
+	    </PreferenceScreen>
+	    
+	    <PreferenceScreen android:key="advancedPreferenceScreen"
+	        android:title="Advanced settings" >
+	    	<PreferenceCategory android:title="Advanced settings" >
+	        
+	        	<CheckBoxPreference android:key="recentOrRunningTasks"
+	        		android:title="Display recent or all running tasks in dock" 
+	        		android:summary="@string/recent_or_running_apps_summary" >
+	    		</CheckBoxPreference>
+	    	
+	    		<CheckBoxPreference android:key="overrideBackButton"
+	        		android:title="Override back button"
+	        		android:summary="@string/override_back_button_summary" >
+	    		</CheckBoxPreference>
+	    	
+	    		<ListPreference android:key="wallpaperBitmapConfig"
+	        		android:title="Set wallpaper bitmap configuration"
+	        		android:summary="@string/set_bitmap_config_summary"
+	        		android:entries="@array/bitmapConfigurationEntries"
+	        		android:entryValues="@array/bitmapConfigurationValues" >
+	    		</ListPreference>
+	    	
+	    		<CheckBoxPreference android:key="ditherWallpaper"
+	        		android:title="Dither wallpaper when loading" 
+	        		android:summary="Will attempt to eliminate visual artifacts." >
+	    		</CheckBoxPreference>
+	    	
+	    		<CheckBoxPreference android:key="disableInPurgeable"
+	        		android:title="Disable inPurgeable during loading" 
+	        		android:summary="@string/disable_purgeable_summary" >
+	    		</CheckBoxPreference>
+	    		
+	    		<CheckBoxPreference android:key="drawWithCache"
+	        		android:title="Disable drawing with cache" 
+	        		android:summary="@string/disable_cache_summary" >
+	    		</CheckBoxPreference>
+	    		
+	    		<ListPreference android:key="drawingCacheQuality"
+	        		android:title="Set drawing cache quality"
+	        		android:summary="@string/set_cache_quality_summary"
+	        		android:entries="@array/cacheQualityEntries"
+	        		android:entryValues="@array/cacheQualityValues" >
+	    		</ListPreference>
+	    		
+	    		<CheckBoxPreference android:key="enableDataCollection"
+	        		android:title="Enable data collection" 
+	        		android:summary="@string/enable_data_collection_summary" >
+	    		</CheckBoxPreference>
+	    		
+	    		<ListPreference android:key="numberOfSamples"
+	        		android:title="Number of samples"
+	        		android:summary="@string/sample_number_summary"
+	        		android:entries="@array/sampleNumberEntries"
+	        		android:entryValues="@array/sampleNumberValues" >
+	    		</ListPreference>
+	    		
+	    		<ListPreference android:key="dataCollectionInterval"
+	        		android:title="Data collection interval"
+	        		android:summary="@string/collection_interval_summary"
+	        		android:entries="@array/collectionIntervalEntries"
+	        		android:entryValues="@array/collectionIntervalValues" >
+	    		</ListPreference>
+	    		
+	    		<Preference android:key="launcherMemory"
+	    		    android:title="Check memory usage" 
+	    		    android:summary="Data collection must be enabled." >
+	    		   
+	    		</Preference>
+	    		
+	    		<CheckBoxPreference android:key="enableLandscapeMode"
+	        		android:title="Enable landscape homescreen" 
+	        		android:summary="@string/enable_landscape_summary" >
+	    		</CheckBoxPreference>
+	    	
+	    	</PreferenceCategory>
+	    </PreferenceScreen>
+    
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Launcher4" >
+        
+    	<Preference android:key="launcherInfo"
+        	android:title="About launcher" >
+    	</Preference>
+    	
+    	<Preference android:key="launcherSupport"
+        	android:title="Launcher4 support" >
+    	</Preference>
+    	
+    	<Preference android:key="launcherReport"
+        	android:title="Launcher4 issue/bug report" >
+    	</Preference>
+    	
+    </PreferenceCategory>
+    
+</PreferenceScreen>

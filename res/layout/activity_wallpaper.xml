@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <ImageView android:id="@+id/wallpaperPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+ 
+    <LinearLayout android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    
+    	<Button android:id="@+id/selectImage"
+        	android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1.0"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/custom_view_transparent_selector"
+        	android:textSize="16sp"
+        	android:padding="16dip"
+        	android:text="@string/wallpaper_activity_select" />
+    
+    	<Button android:id="@+id/cancelActivity"
+        	android:layout_width="0dip"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1.0"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/custom_view_transparent_selector"
+        	android:textSize="16sp"
+        	android:padding="16dip"
+        	android:text="@string/wallpaper_activity_cancel" />
+    	
+    </LinearLayout>
+    
+</LinearLayout>

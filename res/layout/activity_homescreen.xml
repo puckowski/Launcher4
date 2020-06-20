@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.puckowski.launcher4.HomescreenViewFlipper android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+	    android:layout_weight="1.0" >
+        
+        <LinearLayout android:id="@+id/iconGridview"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:orientation="vertical" >
+ 
+    			<GridView android:id="@+id/applicationGrid"
+     				android:layout_height="fill_parent"
+        			android:layout_width="fill_parent"
+        
+        			android:verticalSpacing="10dip"
+        			android:horizontalSpacing="10dip"
+        
+        			android:stretchMode="spacingWidth"
+        
+        			android:columnWidth="80dip"
+        			android:numColumns="auto_fit"
+        
+        			android:persistentDrawingCache="animation|scrolling"
+        			android:alwaysDrawnWithCache="true"
+        			android:scrollbars="none"
+    
+        			android:drawSelectorOnTop="false" 
+        			
+        			android:background="@android:color/black" >
+        	
+        		</GridView>
+    
+		</LinearLayout>
+		
+        <LinearLayout android:id="@+id/primaryHomescreen" 
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+        </LinearLayout>
+        
+    </com.puckowski.launcher4.HomescreenViewFlipper>
+    
+    <com.puckowski.launcher4.HomescreenScrollbar android:id="@+id/homescreenScrollbar"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip" >
+        
+    </com.puckowski.launcher4.HomescreenScrollbar>
+    
+    <LinearLayout android:id="@+id/dockLayoutWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal" >
+        
+        <ImageButton android:id="@+id/appListButton"
+            	android:background="@drawable/custom_view_selector" 
+            	android:layout_width="72dip"
+        		android:layout_height="72dip"
+        		android:src="@drawable/all_apps"  
+        		android:contentDescription="@string/all_apps_button_label"
+	        	android:padding="8dip" >
+            
+        </ImageButton>
+        
+    	<HorizontalScrollView android:id="@+id/dockScrollView"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:scrollbars="none" >
+        
+    		<LinearLayout android:id="@+id/dockLayout"
+        		android:orientation="horizontal"
+        		android:layout_width="wrap_content"
+        		android:layout_height="72dip" >
+        
+    		</LinearLayout>
+    
+    	</HorizontalScrollView>
+    	
+    </LinearLayout>
+    
+</LinearLayout>
